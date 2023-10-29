@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:logo="@drawable/icon"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DelitesPRM392Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".Cart.RecyclerViewOrder"
+            android:exported="true"
+            android:theme="@style/Theme.DelitesPRM392Project1" />
+        <activity
+            android:name=".RecyclerView.ProductManager.ProductManagerRecycleView"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerView.ProductManager.ProductDeteleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerView.ProductManager.ProductAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.ProductManager.ProductUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CategoryProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cart.RecyclerViewCart"
+            android:exported="true"
+            android:theme="@style/Theme.DelitesPRM392Project1" />
+        <activity
+            android:name=".Cart.Cart"
+            android:exported="true" />
+        <activity
+            android:name=".DetailProduct"
+            android:exported="true"
+            android:theme="@style/Theme.DelitesPRM392Project1"/>
+        <activity
+            android:name=".user.UserPassword"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserManagement"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="true"
+            android:theme="@style/Theme.DelitesPRM392Project1"/>
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/Theme.DelitesPRM392Project1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
